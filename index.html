@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="style.css">
+    <title>Lukács Alexandra</title>
+</head>
+<body>
+    <form action="/action_page.php">
+        <fieldset id="kot_m">
+            <legend>regisztráció</legend>
+            <label for="fname">felhasználó</label>
+            <input type="text" id="fname" name="fname" placeholder="csak ékezetmentes betűk"><br><br>
+            <label for="jname">jelszó</label>
+            <input type="text" id="jname" name="jname" placeholder="min. 3 karakter"><br><br>
+            <label for="email">e-mail cím</label>
+            <input type="email" id="email" name="email" placeholder="vmi@vmi.hu"><br><br>
+        </fieldset>
+        <fieldset id="szuletes">
+            <legend>születés</legend>
+            <label for="szulet">születési dátum</label>
+            <input type="date" id="szulet" name="szulet">
+            <fieldset class="kulon">
+                <legend class="mas">személyes</legend>
+                <div>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Angol">
+                    <label for="vehicle1"> angol</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Nemet">
+                    <label for="vehicle2"> német</label><br>
+                </div>
+                <div>
+                    <label for="szak">Választott szak:</label>
+                    <select name="szak" id="szak">
+                        <option value="szfa1">SZFA1</option>
+                        <option value="szfa2">SZFA2</option>
+                        <option value="szfb">SZFB</option>
+                    </select><br>
+                </div>
+                <div>
+                    <input type="radio" id="ferfi" name="nem" value="ferfi">
+                    <label for="ferfi">férfi</label><br>
+                    <input type="radio" id="no" name="nem" value="no">
+                    <label for="no">nő</label><br>
+                </div>
+            </fieldset>
+        </fieldset>
+        <input id="gomb" type="submit" value="regisztráció">
+    </form>
+</body>
+</html>
