@@ -13,11 +13,11 @@
         <fieldset id="kot_m">
             <legend>regisztráció</legend>
             <label for="fname">felhasználó</label>
-            <input type="text" id="fname" name="fname" placeholder="csak ékezetmentes betűk"><br><br>
+            <input type="text" id="fname" name="fname" placeholder="csak ékezetmentes betűk" pattern="\w+"><br><br>
             <label for="jname">jelszó</label>
-            <input type="text" id="jname" name="jname" placeholder="min. 3 karakter"><br><br>
+            <input type="text" id="jname" name="jname" placeholder="min. 3 karakter" pattern=".{3,}[A-Za-z0-9]"><br><br>
             <label for="email">e-mail cím</label>
-            <input type="email" id="email" name="email" placeholder="vmi@vmi.hu"><br><br>
+            <input type="email" id="email" name="email" placeholder="vmi@vmi.hu" pattern="^([a-zA-Z][a-zA-Z0-9_]+)@([a-zA-Z0-9_]+)\.hu$"><br><br>
         </fieldset>
         <fieldset id="szuletes">
             <legend>születés</legend>
@@ -34,8 +34,8 @@
                 <div>
                     <label for="szak">Választott szak:</label>
                     <select name="szak" id="szak">
-                        <option value="szfa1">SZFA1</option>
-                        <option value="szfa2">SZFA2</option>
+                        <option value="szfa1">SZFA2</option>
+                        <option value="szfa2">SZFA1</option>
                         <option value="szfb">SZFB</option>
                     </select><br>
                 </div>
